@@ -54,6 +54,7 @@ const Catalog = () => {
                 </div>
             </div>
             <select name="" id="" onChange={(e) => setCat(e.target.value)} className={style.cat_input}>
+                <option value={''}>Все</option>
                 {
                     categories?.map((category) => {
                         return <option value={category.name}>{category.name}</option>
